@@ -21,6 +21,7 @@ require 'net/https'
 require 'kramdown'
 require 'uri'
 require 'date'
+require './env.rb'
 
 module Jekyll
   class MediumCrossPostGenerator < Generator
@@ -146,7 +147,7 @@ module Jekyll
           canonical_text = canonical_text.gsub /{{ url }}/, canonical_url
       # Otherwise, use boilerplate
       else
-          canonical_text = "<p><i>This article was originally posted <a href=\"#{url}\" rel=\"canonical\">on my own site</a>.</i></p>"
+          canonical_text = "<p><i>This article was originally posted <a href=\"#{url}\" rel=\"canonical\">on my site</a>.</i></p>"
       end
       content << canonical_text
 
