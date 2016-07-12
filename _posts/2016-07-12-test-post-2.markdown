@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Test post!"
+date:   2016-07-12 15:43:22 -0400
+categories: jekyll update
+crosspost_to_medium: true
+---
+Test post 2. Please ignore.
